@@ -7,8 +7,12 @@
 
         font-family: 'Source Sans Pro', sans-serif;
     */
+    main{
+        margin: 40px;
+    }
     section{
-        margin: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 h1,h2{
     color: #b70000;
@@ -25,11 +29,6 @@ nav ul li :hover{
     font-size: 19px;
     transition: 0.5s;
     border: 20px;
-}
-nav ul li a :not(:first-child):hover{
-    color: black !important;
-    font-size: 16px;
-    transition: 0.5s;
 }
 .header-img{
         width: 300px;
@@ -55,4 +54,362 @@ nav ul li a :not(:first-child):hover{
 }
 .container div div div p{
     text-align: center;
+}
+.aulas{
+    text-align: right;
+}
+.section img{
+    width: 55px;
+    border-radius: 500px;
+    padding: 7px 9px 10px 9px;
+    background-color: #b70000;
+    margin: 0 auto;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    color: #b70000;
+    float: none;
+}
+hr{
+    color: #b70000;
+}
+
+.section-div{
+    margin: 0px;
+    text-align: center;
+}
+
+/****************************************************************************************************
+*****************************************************************************************************
+*****************************************************************************************************/
+
+.Form1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 20px;
+}
+iframe{
+    border-radius: 40px;
+    filter: brightness(90%);
+}
+.Form1 form div{
+    display: grid;
+    flex-direction: column;
+}
+form div input{
+    width: 500px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: #b70000;
+}
+.Form1, #FormCenter{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#FormCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#FormCenter div{
+    display: flex;
+    flex-direction: column  ;
+}
+form .Boton{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 165px;
+    height: 47px;
+    font-size: 20px;
+    border-color: #780404;
+    border-radius: 30px;
+    background-color: #b70000;
+    color: #fff;
+}
+figure .svg{
+    width: 60px;
+    height: 60px;
+}
+figure{
+    display: flex;
+    gap: 150px;
+}
+#IGWPP{
+    position: relative;
+    top: -200px;
+    margin-left: 40px;
+}
+
+#ig{
+    color: white;
+    background: linear-gradient(to bottom left, #8134af, #dd2a7b, #f58529);
+    padding: 10px;
+    border-radius: 20px;
+}
+#wpp{
+    color: white;
+    padding: 10px;
+    background-color: rgb(25, 171, 25);
+    border-radius: 20px;
+}
+.Boton2{
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 165px;
+    height: 47px;
+    font-size: 20px;
+    border-color: #780404;
+    border-radius: 30px;
+    background-color: #b70000;
+    color: #fff;
+}
+.AcercaDelClub{
+    grid-area: AcercaDelClub;
+}
+.Club{
+    grid-area: Club;
+}
+.Pelota{
+    grid-area: Pelota;
+}
+.Pelota img{
+    width: 42%;
+}
+.Acerca{
+    grid-area: Acerca;
+}
+.Acerca-2{
+    grid-area: Acerca2;
+}
+.BasquetClub{
+    grid-area: BasquetClub;
+}
+.AcercaPto1{
+    grid-area: Pto1;
+}
+.AcercaPto2{
+    grid-area: Pto2;
+}
+.First{
+    grid-area: First;
+}
+.Second{
+    grid-area: Second;
+}
+.Third{
+    grid-area: Third;
+}
+.Fourth{
+    grid-area: Fourth;
+}
+
+.GridNosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px repeat(6);
+    grid-template-areas: "First"
+                         "Second"
+                         "Third"
+                         "Fourth"
+                         "Fifth";
+}
+.First{
+    display: grid;
+    grid-template-columns: 0.005fr 1fr 1fr;
+    grid-template-areas: ".. AcercaDelClub Club";
+}
+.Second{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr 0.05fr;
+    grid-template-areas: "..Pelota Acerca .."
+}
+.Third{
+    display: grid;
+    grid-template-columns: 0.005fr 1fr 1fr;
+    grid-template-areas: ".. Acerca2 BasquetClub";
+}
+.AcercaDelSecundario{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.Fourth ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Pto1 Pto2";
+}
+
+@media screen and (max-width: 768px) {
+    .Responsive img {
+        width: 65%;
+    }
+    .Pelota img{
+        width: 40vw;
+    }
+
+    .GridNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "First"
+                             "Second"
+                             "Third"
+                             "Fourth"
+                             "Fifth";
+    }
+
+    .First {
+        grid-template-columns: 1fr;
+        grid-template-areas: "AcercaDelClub"
+                             "Club";
+    }
+
+    .Second {
+        grid-template-columns: 1fr;
+        grid-template-areas: "Acerca"
+                             "Pelota";
+    }
+
+    .Third {
+        grid-template-columns: 1fr;
+        grid-template-areas: "Acerca2"
+                             "BasquetClub";
+    }
+
+    .Fourth ul {
+        grid-template-columns: 1fr;
+        grid-template-areas: "Pto1"
+                             "Pto2";
+    }
+    *{
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+.FirstAct{
+    grid-area: FirstAct;
+}
+.SecondAct{
+    grid-area: SecondAct;
+}
+.ThirdAct{
+    grid-area: ThirdAct;
+}
+.FourthAct{
+    grid-area: FourthAct;
+}
+.GridActividades{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "FirstAct"
+                         "SecondAct"
+                         "ThirdAct"
+                         "FourthAct"
+                         "FifthAct";
+}
+.CampoDeportivo{
+    grid-area: CampoDeportivo;
+}
+.CampoDeportivoimg{
+    grid-area: CampoDeportivoimg;
+}
+.Natacion{
+    grid-area: Natacion;
+}
+.Natacionimg{
+    grid-area: Natacionimg;
+}
+.Intertribus{
+    grid-area: Intertribus;
+}
+.Intertribusimg{
+    grid-area: Intertribusimg;
+}
+.Pto1Act{
+    grid-area: Pto1Act;
+}
+.Pto2Act{
+    grid-area: Pto2Act;
+}
+.Pto3Act{
+    grid-area: Pto3Act;
+}
+
+.FirstAct{
+    display: grid;
+    grid-template-columns:  1fr 0.05fr 1fr;
+    grid-template-areas: " CampoDeportivo .. CampoDeportivoimg";
+}
+.SecondAct{
+    display: grid;
+    grid-template-columns: 1fr 0.05fr 1fr;
+    grid-template-areas:"Natacionimg .. Natacion";
+}
+.ThirdAct{
+    display: grid;
+    grid-template-columns: 1fr 0.05fr 1fr;
+    grid-template-areas:"Intertribus .. Intertribusimg";
+}
+.FourthAct div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    grid-template-areas:"Pto1Act Pto2Act"
+                        "Pto3Act";
+}
+.FourthAct div li .Pto3Act{
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .ResponsiveAct img {
+        width: 65%;
+    }
+
+    .GridActividadesAct {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "FirstAct"
+                             "SecondAct"
+                             "ThirdAct"
+                             "FourthAct"
+                             "FifthAct";
+    }
+
+    .FirstAct {
+        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+        grid-template-areas: "CampoDeportivo"
+                             "CampoDeportivoimg";
+    }
+
+    .SecondAct {
+        grid-template-columns: 1fr;
+        grid-template-areas: "Natacion"
+                             "Natacionimg";
+    }
+
+    .ThirdAct {
+        grid-template-columns: 1fr;
+        grid-template-areas: "Intertribus"
+                             "Intertribusimg";
+    }
+
+    .FourthAct ul {
+        grid-template-columns: 1fr;
+        grid-template-areas: "Pto1Act"
+                             "Pto2Act"
+                             "Pto3Act";
+    }
+    *{
+        text-align: center;
+        font-size: 10px;
+    }
 }

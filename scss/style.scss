@@ -1,4 +1,4 @@
-    /*
+/*
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -7,6 +7,16 @@
 
         font-family: 'Source Sans Pro', sans-serif;
     */
+
+    $text-color: #b70000;
+    @mixin Iconos{
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    img{
+        border-radius: 0.1fr;
+    }
     main{
         margin: 40px;
     }
@@ -14,8 +24,16 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
 h1,h2{
-    color: #b70000;
+    color: $text-color;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 img{
         object-fit:cover;
@@ -25,7 +43,7 @@ nav ul li a{
     color: black !important;
 }
 nav ul li :hover{
-    color: #b70000 !important;
+    color: $text-color !important;
     font-size: 19px;
     transition: 0.5s;
     border: 20px;
@@ -34,7 +52,7 @@ nav ul li :hover{
         width: 300px;
     }
 .div-img{
-    background-color: #b70000;
+    background-color: $text-color;
 }
 .main-section-img {
     width: 650px;
@@ -62,7 +80,7 @@ nav ul li :hover{
     width: 55px;
     border-radius: 500px;
     padding: 7px 9px 10px 9px;
-    background-color: #b70000;
+    background-color: $text-color;
     margin: 0 auto;
 }
 .section{
@@ -73,11 +91,11 @@ nav ul li :hover{
 }
 footer p{
     text-align: center;
-    color: #b70000;
+    color: $text-color;
     float: none;
 }
 hr{
-    color: #b70000;
+    color: $text-color;
 }
 
 .section-div{
@@ -108,7 +126,7 @@ form div input{
     height: 40px;
     margin: 5px;
     border-radius: 5px;
-    border-color: #b70000;
+    border-color: $text-color;
 }
 .Form1, #FormCenter{
     font-family: 'Source Sans Pro', sans-serif;
@@ -130,7 +148,7 @@ form .Boton{
     font-size: 20px;
     border-color: #780404;
     border-radius: 30px;
-    background-color: #b70000;
+    background-color: $text-color;
     color: #fff;
 }
 figure .svg{
@@ -148,16 +166,12 @@ figure{
 }
 
 #ig{
-    color: white;
+    @include Iconos;
     background: linear-gradient(to bottom left, #8134af, #dd2a7b, #f58529);
-    padding: 10px;
-    border-radius: 20px;
 }
 #wpp{
-    color: white;
-    padding: 10px;
+    @include Iconos;
     background-color: rgb(25, 171, 25);
-    border-radius: 20px;
 }
 .Boton2{
     align-items: center;
@@ -168,7 +182,7 @@ figure{
     font-size: 20px;
     border-color: #780404;
     border-radius: 30px;
-    background-color: #b70000;
+    background-color: $text-color;
     color: #fff;
 }
 .AcercaDelClub{
@@ -361,9 +375,9 @@ figure{
 .FourthAct div{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr;
+    grid-template-rows: auto;
     grid-template-areas:"Pto1Act Pto2Act"
-                        "Pto3Act";
+                        "Pto3Act ..";
 }
 .FourthAct div li .Pto3Act{
     text-align: center;
@@ -411,5 +425,7 @@ figure{
     *{
         text-align: center;
         font-size: 10px;
+        
     }
+    
 }

@@ -432,6 +432,7 @@ figure {
     grid-template-columns: 1fr;
     grid-template-columns: auto;
     grid-template-areas: "CampoDeportivo" "CampoDeportivoimg";
+  
   }
   .SecondAct {
     grid-template-columns: 1fr;

@@ -1,0 +1,124 @@
+*{
+    align-self: center;
+}
+.Club {
+    grid-area: Club;
+  }
+  
+  .Pelota {
+    grid-area: Pelota;
+  }
+  
+  .Pelota img {
+    width: 42%;
+  }
+  
+  .Acerca {
+    grid-area: Acerca;
+  }
+  
+  .Acerca-2 {
+    grid-area: Acerca2;
+  }
+  
+  .BasquetClub {
+    grid-area: BasquetClub;
+  }
+  
+  .AcercaPto1 {
+    grid-area: Pto1;
+    padding-right: 17px;
+  }
+  
+  .AcercaPto2 {
+    grid-area: Pto2;
+
+  }
+  
+  .First {
+    grid-area: First;
+  }
+  
+  .Second {
+    grid-area: Second;
+  }
+  
+  .Third {
+    grid-area: Third;
+  }
+  
+  .Fourth {
+    grid-area: Fourth;
+  }
+  
+  .GridNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px repeat(6);
+    grid-template-areas: "First" "Second" "Third" "Fourth" "Fifth";
+  }
+  
+  .First {
+    display: grid;
+    grid-template-columns: 1fr 0.005fr 1fr;
+    grid-template-areas: ".. AcercaDelClub Club";
+  }
+  
+  .Second {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr 0.05fr;
+    grid-template-areas: "..Pelota Acerca ..";
+  }
+  
+  .Third {
+    display: grid;
+    grid-template-columns: 0.005fr 1fr 1fr;
+    grid-template-areas: ".. Acerca2 BasquetClub";
+  }
+  
+  .AcercaDelSecundario {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .Fourth ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Pto1 .. Pto2";
+
+  }
+  @media screen and (max-width: 768px) {
+    .Responsive img {
+      width: 65%;
+    }
+    .Pelota img {
+      width: 40vw;
+    }
+    .GridNosotros {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "First" "Second" "Third" "Fourth" "Fifth";
+    }
+    .First {
+      grid-template-columns: 1fr;
+      grid-template-areas: "AcercaDelClub" "Club";
+    }
+    .Second {
+      grid-template-columns: 1fr;
+      grid-template-areas: "Acerca" "Pelota";
+    }
+    .Third {
+      grid-template-columns: 1fr;
+      grid-template-areas: "Acerca2" "BasquetClub";
+    }
+    .Fourth ul {
+      grid-template-columns: 1fr;
+      grid-template-areas: "Pto1" "Pto2";
+      
+    }
+    * {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+  

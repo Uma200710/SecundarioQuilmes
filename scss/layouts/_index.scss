@@ -1,0 +1,86 @@
+img {
+    border-radius: 0.1fr;
+  }
+  
+  main {
+    margin: 40px;
+  }
+  
+  section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  * {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  h1, h2 {
+    color: $text-color;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  img {
+    object-fit: cover;
+    width: 700px;
+  }
+  
+  .div-img {
+    background-color: $text-color;
+  }
+  
+  .main-section-img {
+    width: 650px;
+    filter: brightness(0.9);
+    margin-right: 60px;
+  }
+  
+  .section-4div-img {
+    background-color: #b93e3e;
+    width: 100px;
+    padding: 10px;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .container {
+    padding: 60px;
+  }
+  
+  .container div div div p {
+    text-align: center;
+  }
+  
+  .aulas {
+    text-align: right;
+  }
+  
+  .section img {
+    width: 55px;
+    border-radius: 500px;
+    padding: 7px 9px 10px 9px;
+    background-color: $text-color;
+    margin: 0 auto;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  hr {
+    color: $text-color;
+  }
+  
+  .section-div {
+    margin: 0px;
+    text-align: center;
+  }
+  
+  

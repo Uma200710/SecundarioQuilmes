@@ -2,5 +2,15 @@
     display: grid
     grid-template-columns 1fr 0.05fr 1fr;
   }
+  @mixin instagram {
+    margin-right: 180px;
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom left, #8134af, #dd2a7b, #f58529);
+  }
 
 $text-color: #b70000 !important;
+$form-color: #7e0404;
+$white: #fff;
+$info-color: #b93e3e;

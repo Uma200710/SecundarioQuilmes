@@ -57,17 +57,20 @@
     grid-area: Pto3Act;
   }
   .FirstAct {
-    @include grid;
+    display: grid;
+    grid-template-columns: 1fr 0.005fr 1fr;
     grid-template-areas: " CampoDeportivo .. CampoDeportivoimg";
   }
   
   .SecondAct {
-    @include grid;
+    display: grid;
+    grid-template-columns: 1fr 0.005fr 1fr;
     grid-template-areas: "Natacionimg .. Natacion";
   }
   
   .ThirdAct {
-    @include grid;
+    display: grid;
+    grid-template-columns: 1fr 0.005fr 1fr;
     grid-template-areas: "Intertribus .. Intertribusimg";
   }
   
@@ -79,13 +82,13 @@
         list-style: none;
   }
 }
-  .FourthAct{ 
-        div{ 
+  .FourthAct
+        div
             li {
             text-align: center;
                 }
-            }
-    }
+            
+    
   
   @media screen and (max-width: 768px) {
     .ResponsiveAct {

@@ -99,9 +99,6 @@ img {
 .section img {
   width: 55px;
   border-radius: 500px;
-  padding: 7px 9px 10px 9px;
-  background-color: #b70000 !important;
-  margin: 0 auto;
 }
 
 .section {
@@ -312,17 +309,20 @@ img {
 }
 
 .FirstAct {
-  display: grid grid-template-columns 1fr 0.05fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 0.005fr 1fr;
   grid-template-areas: " CampoDeportivo .. CampoDeportivoimg";
 }
 
 .SecondAct {
-  display: grid grid-template-columns 1fr 0.05fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 0.005fr 1fr;
   grid-template-areas: "Natacionimg .. Natacion";
 }
 
 .ThirdAct {
-  display: grid grid-template-columns 1fr 0.05fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 0.005fr 1fr;
   grid-template-areas: "Intertribus .. Intertribusimg";
 }
 
@@ -424,7 +424,7 @@ form .Boton {
   width: 165px;
   height: 47px;
   font-size: 20px;
-  border-color: #780404;
+  border-color: #7e0404;
   border-radius: 30px;
   background-color: #b70000 !important;
   color: #fff;

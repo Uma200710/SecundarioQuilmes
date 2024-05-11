@@ -39,7 +39,7 @@ img {
   }
   
   .section-4div-img {
-    background-color: #b93e3e;
+    background-color: $info-color;
     width: 100px;
     padding: 10px;
     border-radius: 25px;
@@ -72,9 +72,7 @@ img {
     img {
     width: 55px;
     border-radius: 500px;
-    padding: 7px 9px 10px 9px;
-    background-color: $text-color;
-    margin: 0 auto;
+
   }
 }
   .section {

@@ -53,10 +53,10 @@
      width: 165px;
      height: 47px;
      font-size: 20px;
-     border-color: #780404;
+     border-color:$form-color;
      border-radius: 30px;
      background-color: $text-color;
-     color: #fff;
+     color: $white;
     }
   }     
   .Boton2 {
@@ -66,10 +66,10 @@
     width: 165px;
     height: 47px;
     font-size: 20px;
-    border-color: #7e0404;
+    border-color: $form-color;
     border-radius: 30px;
     background-color: $text-color;
-    color: #fff;
+    color: $white;
   }
   .section-contacto{
     display: flex;

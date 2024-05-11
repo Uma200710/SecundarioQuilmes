@@ -16,9 +16,9 @@
   
   .GridActividades {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "FirstAct" "SecondAct" "ThirdAct" "FourthAct" "FifthAct";
+    grid-template-areas: "FirstAct" "SecondAct" "ThirdAct" "FourthAct";
   }
   
   .CampoDeportivo {
@@ -56,39 +56,43 @@
   .Pto3Act {
     grid-area: Pto3Act;
   }
-  
   .FirstAct {
-    display: grid;
-    grid-template-columns: 1fr 0.05fr 1fr;
+    @include grid;
     grid-template-areas: " CampoDeportivo .. CampoDeportivoimg";
   }
   
   .SecondAct {
-    display: grid;
-    grid-template-columns: 1fr 0.05fr 1fr;
+    @include grid;
     grid-template-areas: "Natacionimg .. Natacion";
   }
   
   .ThirdAct {
-    display: grid;
-    grid-template-columns: 1fr 0.05fr 1fr;
+    @include grid;
     grid-template-areas: "Intertribus .. Intertribusimg";
   }
   
-  .FourthAct div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "Pto1Act Pto2Act Pto3Act";
+  .FourthAct{
+     div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "Pto1Act Pto2Act Pto3Act";
+        list-style: none;
   }
-  
-  .FourthAct div li .Pto3Act {
-    text-align: center;
-  }
+}
+  .FourthAct{ 
+        div{ 
+            li {
+            text-align: center;
+                }
+            }
+    }
   
   @media screen and (max-width: 768px) {
-    .ResponsiveAct img {
+    .ResponsiveAct {
+        img {
       width: 65%;
     }
+}
     .GridActividadesAct {
       grid-template-columns: 1fr;
       grid-template-rows: auto;

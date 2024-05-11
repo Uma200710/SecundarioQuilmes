@@ -51,22 +51,32 @@ img {
     padding: 60px;
   }
   
-  .container div div div p {
-    text-align: center;
-  }
+  .container{ 
+        div{ 
+            div{ 
+                div{ 
+                    p {
+                        text-align: center;
+                        }
+                    }
+
+                }
+            }
+        }
   
   .aulas {
     text-align: right;
   }
   
-  .section img {
+  .section {
+    img {
     width: 55px;
     border-radius: 500px;
     padding: 7px 9px 10px 9px;
     background-color: $text-color;
     margin: 0 auto;
   }
-  
+}
   .section {
     display: flex;
     justify-content: center;
@@ -82,5 +92,12 @@ img {
     margin: 0px;
     text-align: center;
   }
-  
-  
+  @media screen and (max-width: 768px) {
+  .section-4div-img {
+    width: 50px;
+    border-radius: 15px;
+  }
+}
+img{
+    border-radius: 20px;
+}

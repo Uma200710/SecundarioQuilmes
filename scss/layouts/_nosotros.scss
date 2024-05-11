@@ -9,9 +9,11 @@
     grid-area: Pelota;
   }
   
-  .Pelota img {
+  .Pelota{
+     img {
     width: 42%;
   }
+}
   
   .Acerca {
     grid-area: Acerca;
@@ -81,11 +83,12 @@
     margin-bottom: 40px;
   }
   
-  .Fourth ul {
+  .Fourth{
+     ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "Pto1 .. Pto2";
-
+  }
   }
   @media screen and (max-width: 768px) {
     .Responsive img {
@@ -111,10 +114,11 @@
       grid-template-columns: 1fr;
       grid-template-areas: "Acerca2" "BasquetClub";
     }
-    .Fourth ul {
+    .Fourth{
+        ul {
       grid-template-columns: 1fr;
       grid-template-areas: "Pto1" "Pto2";
-      
+        }
     }
     * {
       text-align: center;

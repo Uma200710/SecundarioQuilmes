@@ -1,7 +1,6 @@
-@mixin Iconos{
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-}
+@mixin grid {
+    display: grid
+    grid-template-columns 1fr 0.05fr 1fr;
+  }
 
-$text-color: #b70000;
+$text-color: #b70000 !important;

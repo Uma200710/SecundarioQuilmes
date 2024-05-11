@@ -1,14 +1,26 @@
+@import "../base/vars";
 nav ul li a {
     color: black !important;
   }
   
-  nav ul li :hover {
-    color: #b70000 !important;
+  @media screen and (min-width: 1500px) {nav ul li :hover {
+    color: $text-color;
     font-size: 19px;
     transition: 0.5s;
     border: 20px;
   }
+  }
   
   .header-img {
     width: 300px;
+  }
+  @media screen and (max-width: 768px) {
+    nav ul li :hover {
+        color: black !important;
+        font-size: auto;
+        
+      }
+      .header-img {
+        width: 200px;
+      }
   }

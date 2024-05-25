@@ -8,7 +8,7 @@ nav ul li a {
   }
   @media screen and (min-width: 1500px) {nav ul li :hover {
     color: $text-color;
-    font-size: 19px;
+    transform: scale(1.25);
     transition: 0.5s;
     border: 20px;
   }

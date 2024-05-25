@@ -61,13 +61,15 @@
         grid-area: firsttext;
         display: grid; 
       }
-      .secondind{ 
+      .secondind{
+      padding: 35px 0px;
        grid-area: secondind;
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
        grid-template-rows: auto;
        grid-template-areas: ".. instalacionesimg .. jornadaimg .. formacionimg .."
                             "instalacionestext instalacionestext jornadatext jornadatext formaciontext formaciontext formaciontext";
+      gap: 20px;
       img{
         background-color: $info-color;
         height: 55px;

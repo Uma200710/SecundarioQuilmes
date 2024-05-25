@@ -16,7 +16,7 @@ nav {
 @media screen and (min-width: 1500px) {
   nav ul li :hover {
     color: #b70000 !important;
-    font-size: 19px;
+    transform: scale(1.25);
     transition: 0.5s;
     border: 20px;
   }
@@ -104,11 +104,13 @@ hr {
 }
 
 .secondind {
+  padding: 35px 0px;
   grid-area: secondind;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: ".. instalacionesimg .. jornadaimg .. formacionimg .." "instalacionestext instalacionestext jornadatext jornadatext formaciontext formaciontext formaciontext";
+  gap: 20px;
 }
 .secondind img {
   background-color: #b93e3e;
@@ -399,6 +401,7 @@ hr {
 }
 
 .CampoDeportivoimg {
+  padding-top: 50px;
   grid-area: CampoDeportivoimg;
 }
 
@@ -481,9 +484,13 @@ hr {
     grid-template-columns: 1fr;
     grid-template-areas: "Intertribus" "Intertribusimg";
   }
-  .FourthAct ul {
+  .FourthAct div {
+    padding-top: 10px;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas: "Pto1Act" "Pto2Act" "Pto3Act";
+    gap: 10px;
+    list-style: none;
   }
   * {
     text-align: center;
@@ -505,6 +512,7 @@ hr {
 }
 
 .Form1 {
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -570,6 +578,7 @@ form .Boton {
 .section-contacto {
   display: flex;
   justify-content: right;
+  padding-bottom: 30px;
 }
 
 #iconos {
@@ -579,6 +588,15 @@ form .Boton {
 
 .sect-h2 {
   padding-top: 25px;
+}
+
+.section-div {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.contfoot {
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 768px) {

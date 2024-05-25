@@ -26,6 +26,7 @@
 }
 
 .CampoDeportivoimg {
+  padding-top: 50px;
   grid-area: CampoDeportivoimg;
 }
 
@@ -112,10 +113,16 @@
     grid-template-columns: 1fr;
     grid-template-areas: "Intertribus" "Intertribusimg";
   }
-  .FourthAct ul {
-    grid-template-columns: 1fr;
-    grid-template-areas: "Pto1Act" "Pto2Act" "Pto3Act";
-  }
+  .FourthAct{
+    div {
+      padding-top: 10px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+       grid-template-areas: "Pto1Act" "Pto2Act" "Pto3Act";
+       gap: 10px;
+       list-style: none;
+ }
+ }
   * {
     text-align: center;
     font-size: 10px;

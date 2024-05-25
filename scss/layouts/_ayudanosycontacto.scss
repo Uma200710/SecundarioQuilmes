@@ -1,6 +1,7 @@
 @import "../base/vars";
 
 .Form1 {
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,16 +75,22 @@
   .section-contacto{
     display: flex;
     justify-content: right;
+    padding-bottom: 30px;
   }
   #iconos{
     position: relative;
     margin-top: -200px;
   }
-  
   .sect-h2{
     padding-top: 25px;
   }
-
+  .section-div{ 
+    padding-top: 50px;
+    text-align: center
+  }
+.contfoot{
+  padding-top: 30px;
+}
   @media screen and (max-width: 768px) {
     h1{
       padding-top: 20px;

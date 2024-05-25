@@ -51,7 +51,7 @@
        display: grid;
        grid-template-columns: 1fr 0.05fr 1fr;
        grid-template-areas: "firsttext .. firstimg";
-       padding-top: 50px;
+       padding-top: 25px;
      }
       .firstindimg{
         grid-area: firstimg;
@@ -200,8 +200,22 @@
            width: 45px;
          }
       }
+      .secondind{
+        padding: 5px 0px;
+      }
+      .fourthind{
+        padding-top: 0px;
+        img{
+          height: 70px;
+          width: auto;
+          padding: 5px 0px;
+        }
+      } 
+      .fifthind{
+      padding: 10px 0px;
      }
-
+     }
+    
 
 
 
@@ -217,4 +231,53 @@
         width: 220px;
       }
     }
+ }
+
+ @media screen and (max-width: 1100px) and (min-width: 820px){
+  .fourthind{
+    padding-top: 0px;
+    img{
+      height: 80px;
+      width: auto;
+      padding: 0px 0px;
+    }
+  }
+  .secondind{
+    .formaciontext, .jornadatext, .instalacionestext{
+      align-self: start;
+      
+    }
+  }
+  .secondind{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "instalacionesimg jornadaimg formacionimg"
+                         "instalacionestext jornadatext formaciontext";
+    text-align: justify;
+    hyphens: auto;
+  }
+  img{
+    border-radius: 0px;
+    padding: 15px 0px;
+  }
+  .secondind{
+    img{
+    border-radius: 12px;
+    }
+  }
+  h1, p{
+    text-align: justify;
+    hyphens: auto;
+  }
+  .thirdindtext{
+    h2{
+    text-align: start;
+    }
+  }
+  .fourthind, .fifthind{
+    p, h2{
+      padding-top: 5px;
+      text-align: center;
+    }
+  }
  }

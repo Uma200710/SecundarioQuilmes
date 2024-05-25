@@ -38,6 +38,7 @@
   }
   
   .First {
+    padding-top: 25px;
     grid-area: First;
   }
   
@@ -56,12 +57,11 @@
   .GridNosotros {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 700px repeat(6);
+    grid-template-rows: auto;
     grid-template-areas: "First" "Second" "Third" "Fourth" "Fifth";
   }
   
   .First {
-    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 0.005fr 1fr;
     grid-template-areas: ".. AcercaDelClub Club";
@@ -81,14 +81,14 @@
   
   .AcercaDelSecundario {
     text-align: center;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
   }
   
   .Fourth{
      ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "Pto1 .. Pto2";
+    grid-template-areas: "Pto1 Pto2";
   }
   }
   @media screen and (max-width: 768px) {
@@ -125,5 +125,41 @@
       text-align: center;
       font-size: 10px;
     }
+    .First, .AcercaDelSecundario{
+      padding: 0px;
+    }
+
+    img{
+      padding: 20px 0px;
+    }
+  }
+  @media screen and (max-width: 1100px) and (min-width: 820px){
+  .First {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "AcercaDelClub Club";
+    gap: 20px;
   }
   
+  .Second {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: "Pelota Acerca";
+    gap: 20px;
+  }
+  
+  .Third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Acerca2 BasquetClub";
+    gap: 20px;
+  }
+.Fourth{
+     ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Pto1 Pto2";
+    gap: 25px;
+  }
+}
+  }

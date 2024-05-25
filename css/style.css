@@ -34,6 +34,11 @@ nav {
     width: 195px;
   }
 }
+@media screen and (max-width: 1100px) and (min-width: 820px) {
+  nav {
+    justify-content: center;
+  }
+}
 footer p {
   text-align: center;
   color: #b70000 !important;
@@ -90,7 +95,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 0.05fr 1fr;
   grid-template-areas: "firsttext .. firstimg";
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .firstindimg {
@@ -237,6 +242,20 @@ hr {
     height: 45px;
     width: 45px;
   }
+  .secondind {
+    padding: 5px 0px;
+  }
+  .fourthind {
+    padding-top: 0px;
+  }
+  .fourthind img {
+    height: 70px;
+    width: auto;
+    padding: 5px 0px;
+  }
+  .fifthind {
+    padding: 10px 0px;
+  }
 }
 @media screen and (max-width: 320px) {
   .firstindimg, .thirdindimg {
@@ -248,6 +267,44 @@ hr {
   }
   body .thirdind img, body .firstind img {
     width: 220px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 820px) {
+  .fourthind {
+    padding-top: 0px;
+  }
+  .fourthind img {
+    height: 80px;
+    width: auto;
+    padding: 0px 0px;
+  }
+  .secondind .formaciontext, .secondind .jornadatext, .secondind .instalacionestext {
+    align-self: start;
+  }
+  .secondind {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "instalacionesimg jornadaimg formacionimg" "instalacionestext jornadatext formaciontext";
+    text-align: justify;
+    hyphens: auto;
+  }
+  img {
+    border-radius: 0px;
+    padding: 15px 0px;
+  }
+  .secondind img {
+    border-radius: 12px;
+  }
+  h1, p {
+    text-align: justify;
+    hyphens: auto;
+  }
+  .thirdindtext h2 {
+    text-align: start;
+  }
+  .fourthind p, .fourthind h2, .fifthind p, .fifthind h2 {
+    padding-top: 5px;
+    text-align: center;
   }
 }
 * {
@@ -288,6 +345,7 @@ hr {
 }
 
 .First {
+  padding-top: 25px;
   grid-area: First;
 }
 
@@ -306,12 +364,11 @@ hr {
 .GridNosotros {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 700px repeat(6);
+  grid-template-rows: auto;
   grid-template-areas: "First" "Second" "Third" "Fourth" "Fifth";
 }
 
 .First {
-  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 0.005fr 1fr;
   grid-template-areas: ".. AcercaDelClub Club";
@@ -331,13 +388,13 @@ hr {
 
 .AcercaDelSecundario {
   text-align: center;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .Fourth ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "Pto1 .. Pto2";
+  grid-template-areas: "Pto1 Pto2";
 }
 
 @media screen and (max-width: 768px) {
@@ -372,6 +429,38 @@ hr {
     text-align: center;
     font-size: 10px;
   }
+  .First, .AcercaDelSecundario {
+    padding: 0px;
+  }
+  img {
+    padding: 20px 0px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 820px) {
+  .First {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "AcercaDelClub Club";
+    gap: 20px;
+  }
+  .Second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Pelota Acerca";
+    gap: 20px;
+  }
+  .Third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Acerca2 BasquetClub";
+    gap: 20px;
+  }
+  .Fourth ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Pto1 Pto2";
+    gap: 25px;
+  }
 }
 .FirstAct {
   grid-area: FirstAct;
@@ -401,7 +490,7 @@ hr {
 }
 
 .CampoDeportivoimg {
-  padding-top: 50px;
+  padding-top: 25px;
   grid-area: CampoDeportivoimg;
 }
 
@@ -496,6 +585,29 @@ hr {
     text-align: center;
     font-size: 10px;
   }
+  .CampoDeportivoimg {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 820px) {
+  img {
+    width: 100%;
+    padding-top: 20px;
+  }
+  h1 {
+    padding-top: 20px;
+  }
+  .FourthAct h2 {
+    text-align: center;
+  }
+  .FourthAct div {
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Pto1Act" "Pto2Act" "Pto3Act";
+    gap: 5px;
+    list-style: none;
+  }
 }
 .fa-instagram {
   margin-right: 180px;
@@ -512,7 +624,7 @@ hr {
 }
 
 .Form1 {
-  padding-top: 50px;
+  padding-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -591,7 +703,7 @@ form .Boton {
 }
 
 .section-div {
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -640,6 +752,76 @@ form .Boton {
     height: 30px;
     font-size: 10px;
     border-radius: 30px;
+  }
+  .header-img {
+    width: 243.35px;
+    height: auto;
+  }
+  .section-div {
+    padding: 5px 0px 0px 0px;
+  }
+  .Form1 {
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 820px) {
+  .section-contacto {
+    display: flex;
+    justify-content: center;
+  }
+  * {
+    text-align: center;
+  }
+  .Form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  iframe {
+    border-radius: 40px;
+    width: 420px;
+    height: 350px;
+    display: flex;
+    position: static;
+  }
+  #iconos {
+    margin: auto;
+    text-align: center;
+  }
+  #iconos h2 {
+    padding-top: 0px;
+  }
+  .section-contacto {
+    padding-bottom: 5px;
+  }
+  form .Boton, .Boton2 {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 30px;
+  }
+  .header-img {
+    width: 243.35px;
+    height: auto;
+  }
+  .Form1 {
+    padding-top: 5px;
+  }
+  .section-div h1, .section-div p {
+    text-align: center;
+  }
+  .Form1 form div h1 {
+    text-align: center;
+  }
+  form .Boton, form .Boton2 {
+    margin: auto;
+    width: 135px;
+    height: 47px;
+    font-size: 20px;
+  }
+  * {
+    gap: 5px;
   }
 }
 

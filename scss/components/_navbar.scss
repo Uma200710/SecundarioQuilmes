@@ -2,7 +2,10 @@
 nav ul li a {
     color: black !important;
   }
-  
+  nav{
+    display: flex;
+    justify-content: flex-end;
+  }
   @media screen and (min-width: 1500px) {nav ul li :hover {
     color: $text-color;
     font-size: 19px;
@@ -21,6 +24,6 @@ nav ul li a {
         
       }
       .header-img {
-        width: 200px;
+        width: 195px;
       }
   }

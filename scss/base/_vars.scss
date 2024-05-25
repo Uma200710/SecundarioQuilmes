@@ -1,14 +1,20 @@
-@mixin grid {
-    display: grid
-    grid-template-columns 1fr 0.05fr 1fr;
-  }
+@mixin grid($columns: 1fr 0.05fr 1fr) {
+  display: grid;
+  grid-template-columns: $columns;
+}
   @mixin instagram {
     margin-right: 180px;
     margin-left: 10px;
-    padding: 3px 8px;
+    padding: 4px 8px;
     border-radius: 20px;
     background: linear-gradient(to bottom left, #8134af, #dd2a7b, #f58529);
-  }
+
+    @media screen and (max-width: 768px){
+        padding: 2px 4px;
+        border-radius: 12px;
+      }
+    }
+
 
 $text-color: #b70000 !important;
 $form-color: #7e0404;

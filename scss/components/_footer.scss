@@ -1,5 +1,8 @@
 footer p {
-    text-align: center;
-    color: $text-color;
-    float: none;
-  }
+  text-align: center;
+  color: $text-color;
+}
+footer nav{
+  display: flex;
+  justify-content: center;
+}

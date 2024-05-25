@@ -1,101 +1,218 @@
-img {
-    border-radius: 0.1fr;
-  }
+  body {
+     padding: 50px 50px 15px 50px;
+    
+   }
   
-  main {
-    margin: 40px;
-  }
+   * {
+     font-family: "Source Sans Pro", sans-serif;
+   }
   
-  section {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+   h1, h2 {
+     color: $text-color;
+     font-family: "Source Sans 3", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+   }
   
-  * {
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  
-  h1, h2 {
-    color: $text-color;
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  img {
-    object-fit: cover;
-    width: 700px;
-  }
-  
-  .div-img {
-    background-color: $text-color;
-  }
-  
-  .main-section-img {
-    width: 650px;
-    filter: brightness(0.9);
-    margin-right: 60px;
-  }
-  
-  .section-4div-img {
-    background-color: $info-color;
-    width: 100px;
-    padding: 10px;
-    border-radius: 25px;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .container {
-    padding: 60px;
-  }
-  
-  .container{ 
-        div{ 
-            div{ 
-                div{ 
-                    p {
-                        text-align: center;
-                        }
-                    }
+   img {
+     object-fit: cover;
+     width: 700px;
+     border-radius: 12px;
+   }
 
-                }
-            }
+  .gridind{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "firstind"
+                         "secondind"
+                         "thirdind"
+                         "fourthind"
+                         "fifthind";
+   padding: 0;
+  }
+
+  .secondind{
+             div{           
+                  img{
+                      background-color: $info-color;
+                      padding: 5px;
+                      height: 60px;
+                      width: 60px;
+       }
+     }  
+  }
+   hr {
+     color: $text-color;
+   }
+      .firstind {
+       grid-area: firstind;
+       display: grid;
+       grid-template-columns: 1fr 0.05fr 1fr;
+       grid-template-areas: "firsttext .. firstimg";
+       padding-top: 50px;
+     }
+      .firstindimg{
+        grid-area: firstimg;
+        display: grid;
+      }
+      .firstindtext{
+        grid-area: firsttext;
+        display: grid; 
+      }
+      .secondind{ 
+       grid-area: secondind;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       grid-template-rows: auto;
+       grid-template-areas: ".. instalacionesimg .. jornadaimg .. formacionimg .."
+                            "instalacionestext instalacionestext jornadatext jornadatext formaciontext formaciontext formaciontext";
+      img{
+        background-color: $info-color;
+        height: 55px;
+        width: 55px;
+        padding: 5px;
+      }
+      }
+     
+      .instalacionesimg{
+       grid-area: instalacionesimg;
+      }
+      .jornadaimg{
+       grid-area: jornadaimg;
+      }
+      .formacionimg{
+       grid-area: formacionimg; 
+      }
+      .instalacionestext{
+       grid-area: instalacionestext;
+      }
+      .jornadatext{
+       grid-area: jornadatext;
+      }
+      .formaciontext{
+       grid-area: formaciontext;
+      }
+
+     
+      .thirdindimg{
+       display: grid;
+        grid-area: thirdimg;
+      }
+      .thirdindtxt{
+       display: grid;
+        grid-area: thirdtxt;
+      }
+      .thirdind{
+       display: grid;
+        grid-area: thirdind;
+        grid-template-columns: 1fr 0.05fr 1fr;
+        grid-template-areas: "thirdtxt .. thirdimg";
+      }  
+      .fourthind{
+        padding-top: 40px;
+       img{
+         height: 60px;
+         width: 60px;
+         margin: auto;
+       }
+         display: grid;
+         text-align: center;
+         grid-area: fourthind;
+      }
+      .fifthind{
+         text-align: center;
+         padding: 40px 0px;
+      }
+
+      @media screen and (max-width: 720px) {
+        img{
+          margin: auto;
         }
-  
-  .aulas {
-    text-align: right;
-  }
-  
-  .section {
-    img {
-    width: 55px;
-    border-radius: 500px;
+       body {
+         padding: 20px;  
+       }
+       .firstind {
+         grid-area: firstind;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas: "firsttext" "firstimg";
+         padding-top: 15px;
+       }
+        .firstindimg{
+          grid-area: firstimg;
+          display: grid;
+          padding-bottom: 10px;
+         img{
+           width: 280px;
+           height:auto;
+         }
+        }
+        .firstindtext{
+          grid-area: firsttext;
+          display: grid; 
+        }
 
-  }
-}
-  .section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  hr {
-    color: $text-color;
-  }
-  
-  .section-div {
-    margin: 0px;
-    text-align: center;
-  }
-  @media screen and (max-width: 768px) {
-  .section-4div-img {
-    width: 50px;
-    border-radius: 15px;
-  }
-}
-img{
-    border-radius: 20px;
-}
+        .secondind{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas: ".. instalacionesimg .."
+                               "instalacionestext instalacionestext instalacionestext"
+                               ".. jornadaimg .."
+                               "jornadatext jornadatext jornadatext"
+                               ".. formacionimg .."
+                               "formaciontext formaciontext formaciontext";
+          text-align: center;
+        }
+        .secondind{
+
+          .secondindimg, .secondindtext{
+            display: grid;
+          }
+        }
+
+        .thirdindimg{
+         display: grid;
+          grid-area: thirdimg;
+          width: 280px;
+          margin: auto;
+          img{
+           width: 280px;
+           height:auto;
+         }
+        }
+        .thirdindtxt{
+         display: grid;
+          grid-area: thirdtxt;
+        }
+        .thirdind{
+         display: grid;
+          grid-area: thirdind;
+          grid-template-columns: 1fr;
+          grid-template-areas: "thirdtxt" "thirdimg";
+        }  
+        .fourthind{
+         img{
+           height: 45px;
+           width: 45px;
+         }
+      }
+     }
+
+
+
+
+
+    @media screen and (max-width: 320px) {
+      .firstindimg, .thirdindimg{
+        width: 290px;
+        height: auto;
+      }
+      body {
+         padding: 10px;
+      .thirdind img, .firstind img{
+        width: 220px;
+      }
+    }
+ }

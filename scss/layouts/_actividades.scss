@@ -1,126 +1,123 @@
 .FirstAct {
-    grid-area: FirstAct;
-  }
+  grid-area: FirstAct;
+}
+
+.SecondAct {
+  grid-area: SecondAct;
+}
+
+.ThirdAct {
+  grid-area: ThirdAct;
+}
+
+.FourthAct {
+  grid-area: FourthAct;
+}
+
+.GridActividades {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "FirstAct" "SecondAct" "ThirdAct" "FourthAct";
+}
+
+.CampoDeportivo {
+  grid-area: CampoDeportivo;
+}
+
+.CampoDeportivoimg {
+  grid-area: CampoDeportivoimg;
+}
+
+.Natacion {
+  grid-area: Natacion;
+}
+
+.Natacionimg {
+  grid-area: Natacionimg;
+}
+
+.Intertribus {
+  grid-area: Intertribus;
+}
+
+.Intertribusimg {
+  grid-area: Intertribusimg;
+}
+
+.Pto1Act {
+  grid-area: Pto1Act;
+}
+
+.Pto2Act {
+  grid-area: Pto2Act;
+}
+
+.Pto3Act {
+  grid-area: Pto3Act;
+}
+.FirstAct {
+  @include grid;
+  grid-template-areas: " CampoDeportivo .. CampoDeportivoimg";
+}
+
+.SecondAct {
+  @include grid;
+  grid-template-areas: "Natacionimg .. Natacion";
+}
+
+.ThirdAct {
+  @include grid;
+  grid-template-areas: "Intertribus .. Intertribusimg";
+}
+
+.FourthAct{
+   div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "Pto1Act Pto2Act Pto3Act";
+      list-style: none;
+}
+}
+.FourthAct
+      div
+          li {
+          text-align: center;
+              }
+          
   
-  .SecondAct {
-    grid-area: SecondAct;
+
+@media screen and (max-width: 768px) {
+  .ResponsiveAct {
+      img {
+    width: 65%;
   }
-  
-  .ThirdAct {
-    grid-area: ThirdAct;
-  }
-  
-  .FourthAct {
-    grid-area: FourthAct;
-  }
-  
-  .GridActividades {
-    display: grid;
-    grid-template-columns: auto;
+}
+  .GridActividadesAct {
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "FirstAct" "SecondAct" "ThirdAct" "FourthAct";
-  }
-  
-  .CampoDeportivo {
-    grid-area: CampoDeportivo;
-  }
-  
-  .CampoDeportivoimg {
-    grid-area: CampoDeportivoimg;
-  }
-  
-  .Natacion {
-    grid-area: Natacion;
-  }
-  
-  .Natacionimg {
-    grid-area: Natacionimg;
-  }
-  
-  .Intertribus {
-    grid-area: Intertribus;
-  }
-  
-  .Intertribusimg {
-    grid-area: Intertribusimg;
-  }
-  
-  .Pto1Act {
-    grid-area: Pto1Act;
-  }
-  
-  .Pto2Act {
-    grid-area: Pto2Act;
-  }
-  
-  .Pto3Act {
-    grid-area: Pto3Act;
+    grid-template-areas: "FirstAct" "SecondAct" "ThirdAct" "FourthAct" "FifthAct";
   }
   .FirstAct {
-    display: grid;
-    grid-template-columns: 1fr 0.005fr 1fr;
-    grid-template-areas: " CampoDeportivo .. CampoDeportivoimg";
-  }
+    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "CampoDeportivo" "CampoDeportivoimg";
   
+  }
   .SecondAct {
-    display: grid;
-    grid-template-columns: 1fr 0.005fr 1fr;
-    grid-template-areas: "Natacionimg .. Natacion";
+    grid-template-columns: 1fr;
+    grid-template-areas: "Natacion" "Natacionimg";
   }
-  
   .ThirdAct {
-    display: grid;
-    grid-template-columns: 1fr 0.005fr 1fr;
-    grid-template-areas: "Intertribus .. Intertribusimg";
+    grid-template-columns: 1fr;
+    grid-template-areas: "Intertribus" "Intertribusimg";
   }
-  
-  .FourthAct{
-     div {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "Pto1Act Pto2Act Pto3Act";
-        list-style: none;
+  .FourthAct ul {
+    grid-template-columns: 1fr;
+    grid-template-areas: "Pto1Act" "Pto2Act" "Pto3Act";
+  }
+  * {
+    text-align: center;
+    font-size: 10px;
   }
 }
-  .FourthAct
-        div
-            li {
-            text-align: center;
-                }
-            
-    
-  
-  @media screen and (max-width: 768px) {
-    .ResponsiveAct {
-        img {
-      width: 65%;
-    }
-}
-    .GridActividadesAct {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: "FirstAct" "SecondAct" "ThirdAct" "FourthAct" "FifthAct";
-    }
-    .FirstAct {
-      grid-template-columns: 1fr;
-      grid-template-columns: auto;
-      grid-template-areas: "CampoDeportivo" "CampoDeportivoimg";
-    
-    }
-    .SecondAct {
-      grid-template-columns: 1fr;
-      grid-template-areas: "Natacion" "Natacionimg";
-    }
-    .ThirdAct {
-      grid-template-columns: 1fr;
-      grid-template-areas: "Intertribus" "Intertribusimg";
-    }
-    .FourthAct ul {
-      grid-template-columns: 1fr;
-      grid-template-areas: "Pto1Act" "Pto2Act" "Pto3Act";
-    }
-    * {
-      text-align: center;
-      font-size: 10px;
-    }
-  }
